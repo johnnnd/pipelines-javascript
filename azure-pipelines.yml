@@ -20,15 +20,6 @@ steps:
     npm run build
   displayName: 'npm install and build'
 
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(System.DefaultWorkingDirectory)'
-
-- task: ArchiveFiles@2
-  inputs:
-    rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
-    includeRootFolder: false
-
 - task: AzureWebApp@1
   inputs:
     azureSubscription: 'myazure'
