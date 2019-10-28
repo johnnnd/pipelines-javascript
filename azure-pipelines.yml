@@ -31,7 +31,7 @@ steps:
 
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'myapp'
+    azureSubscription: 'myazure'
     appName: 'firstAppDeployment2110'
     package: '$(System.DefaultWorkingDirectory)'
     customWebConfig: '-Handler iisnode -NodeStartFile server.js -appType node'
