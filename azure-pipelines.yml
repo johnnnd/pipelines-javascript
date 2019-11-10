@@ -23,6 +23,6 @@ steps:
 - task: AzureWebApp@1
   inputs:
     azureSubscription: 'Azure'
-    appName: 'nodejsapp2810'
+    appName: 'webapp1111t5uqpxt7rzw22'
     package: '$(System.DefaultWorkingDirectory)'
     customWebConfig: '-Handler iisnode -NodeStartFile server.js -appType node'
